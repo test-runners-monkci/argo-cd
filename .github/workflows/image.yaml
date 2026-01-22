@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: read
     # Always run to calculate variables - other jobs check outputs
-    runs-on: ubuntu-24.04
+    runs-on: self-hosted
     outputs:
       image-tag: ${{ steps.image.outputs.tag}}
       platforms: ${{ steps.platforms.outputs.platforms }}
