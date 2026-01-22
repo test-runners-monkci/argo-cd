@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: read
     # Always run to calculate variables - other jobs check outputs
-    runs-on: self-hosted
+    runs-on: [self-hosted, 5000-iops]
     outputs:
       image-tag: ${{ steps.image.outputs.tag}}
       platforms: ${{ steps.platforms.outputs.platforms }}
